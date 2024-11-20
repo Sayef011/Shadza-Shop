@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script class-4</title>
+
+
+  <!-- FONT AWSOME CSS FILE -->
+  <link rel="stylesheet" href="css/all.min.css">
+
+<!-- LINKING BOOTSTRAP CSS FILE -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- LINKING OUR CSS FILE -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="">
+    <!-- NAVBAR SECTION HERE -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <div class="menu-sidebar">
+                <i class="fa-solid fa-bars-staggered"></i>
+              </div>
+              <a class="navbar-brand mx-auto" href="#"><span>S</span>hadza <span class="d-block">Shop</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="row d-flex">
+              <div class="darkmode-icons">
+                <span class="moon"><iconify-icon icon="line-md:moon-loop"></iconify-icon></span>
+                <span class="sun"><iconify-icon icon="line-md:sun-rising-loop"></iconify-icon></span>
+              </div>
+              <a href="#" class="user"><i class="fa-regular fa-user"></i>
+              <div class="modal">
+                <div class="modal-content">
+                  <label for="email">Email and Phone</label>
+                  <input type="email" placeholder="Enter Your Email" id="email">
+
+                  <label for="password">password</label>
+                  <input type="password" placeholder="Password" id="password">
+                  
+                  <label for="checkbox"></label>
+                  <input type="checkbox" id="checkbox">
+
+                  <div class="signupbtn">
+                    <button class="loginBtn">Login</button>
+                    <button class="CreateAccount">Create Account</button>
+                  </div>
+                </div>
+              </div>
+              </a>
+              <a href="#" class="cart"><iconify-icon icon="solar:bag-3-line-duotone"></iconify-icon></a>
+            </div>
+              </div>
+            </div>
+          </nav>
+    </header>
+ <!-- NAVBAR SECTION END -->
+ <aside class="sidebar">
+<div class="sidebar-content">
+ <ul class="side-bar-link">
+  <li class="side-link"><a href="#"><i class="fa-solid fa-briefcase"></i>Offers</a></li>
+  <li class="side-link"><a href="#"><i class="fa-solid fa-heart"></i>Favourites</a></li>
+  <li class="side-link"><a href="#"><iconify-icon icon="lets-icons:winter"></iconify-icon>Winter Collection</a></li>
+  <li class="side-link"><a href="#"><i class="fa-solid fa-fire"></i>Popular</a></li>
+  <li class="side-link sub-menu"><a href="#"><iconify-icon icon="fxemoji:potoffood"></iconify-icon>Food<i class="fa-solid fa-angle-right"></i></a>
+      <ul class="dropdown-sub-menu ">
+        <li><a class="dropdown-item" href="#">Fruits & Vegetables</a></li>
+        <li><a class="dropdown-item" href="#">Meat & Fish</a></li>
+        <li><a class="dropdown-item" href="#">Cooking</a></li>
+        <li><a class="dropdown-item" href="#">Sauces & Pickles</a></li>
+        <li><a class="dropdown-item" href="#">Dairy & Eggs</a></li>
+        <li><a class="dropdown-item" href="#">Breakfast</a></li>
+        <li><a class="dropdown-item" href="#">Candy & Chocolate</a></li>
+        <li><a class="dropdown-item" href="#">Snacks</a></li>
+        <li><a class="dropdown-item" href="#">Beverages</a></li>
+        <li><a class="dropdown-item" href="#">Baking</a></li>
+        <li><a class="dropdown-item" href="#">Frozen & Canned</a></li>
+        <li><a class="dropdown-item" href="#">Diabetic Food</a></li>
+
+      </ul>
+    </li>
+  <li class="side-link sub-menu2"><a href="#"><iconify-icon class="clean" icon="material-symbols:cleaning-bucket-rounded"></iconify-icon>Cleaning Supplies<i class="fa-solid fa-angle-right"></i></a>
+    <ul class="dropdown-sub-menu2">
+      <li><a class="dropdown-item" href="#">Fruits & Vegetables</a></li>
+      <li><a class="dropdown-item" href="#">Meat & Fish</a></li>
+      <li><a class="dropdown-item" href="#">Cooking</a></li>
+      <li><a class="dropdown-item" href="#">Sauces & Pickles</a></li>
+      <li><a class="dropdown-item" href="#">Dairy & Eggs</a></li>
+      <li><a class="dropdown-item" href="#">Breakfast</a></li>
+      <li><a class="dropdown-item" href="#">Candy & Chocolate</a></li>
+      <li><a class="dropdown-item" href="#">Snacks</a></li>
+      <li><a class="dropdown-item" href="#">Beverages</a></li>
+      <li><a class="dropdown-item" href="#">Baking</a></li>
+      <li><a class="dropdown-item" href="#">Frozen & Canned</a></li>
+      <li><a class="dropdown-item" href="#">Diabetic Food</a></li>
+
+    </ul></li>
+  <li class="side-link sub-menu3"><a href="#"><iconify-icon class="care" icon="material-symbols:self-care"></iconify-icon>Personal Care<i class="fa-solid fa-angle-right"></i></a>
+    <ul class="dropdown-sub-menu3">
+      <li><a class="dropdown-item" href="#">Fruits & Vegetables</a></li>
+      <li><a class="dropdown-item" href="#">Meat & Fish</a></li>
+      <li><a class="dropdown-item" href="#">Cooking</a></li>
+      <li><a class="dropdown-item" href="#">Sauces & Pickles</a></li>
+      <li><a class="dropdown-item" href="#">Dairy & Eggs</a></li>
+      <li><a class="dropdown-item" href="#">Breakfast</a></li>
+      <li><a class="dropdown-item" href="#">Candy & Chocolate</a></li>
+      <li><a class="dropdown-item" href="#">Snacks</a></li>
+      <li><a class="dropdown-item" href="#">Beverages</a></li>
+      <li><a class="dropdown-item" href="#">Baking</a></li>
+      <li><a class="dropdown-item" href="#">Frozen & Canned</a></li>
+      <li><a class="dropdown-item" href="#">Diabetic Food</a></li>
+
+    </ul>
+  </li>
+  <li class="side-link"><a href="#"><iconify-icon class="health" icon="ix:health"></iconify-icon>Health & Wellness<i class="fa-solid fa-angle-right"></i></a></li>
+  <li class="side-link"><a href="#"><i class="fa-solid fa-person-breastfeeding"></i>Baby Care<i class="fa-solid fa-angle-right"></i></a></li>
+  <li class="side-link"><a href="#"><i class="fa-solid fa-kitchen-set"></i>Home & Kitchen<i class="fa-solid fa-angle-right"></i></a></li>
+  <li class="side-link"><a href="#"><iconify-icon class="office" icon="cbi:office"></iconify-icon>Stationery & Office<i class="fa-solid fa-angle-right"></i></a></li>
+  <li class="side-link"><a href="#"><iconify-icon icon="cbi:camera-pet"></iconify-icon>Pet Care<i class="fa-solid fa-angle-right"></i></a></li>
+  <li class="side-link"><a href="#"><iconify-icon icon="flat-color-icons:sports-mode"></iconify-icon>Toys & Sports</a></li>
+  <li class="side-link"><a href="#"><iconify-icon icon="icon-park:foundation-makeup"></iconify-icon>Beauty & MakeUp</a></li>
+  <li class="side-link sub-menu4"><a href="#"><i class="fa-solid fa-shirt"></i>Fashion & Lifestyle<i class="fa-solid fa-angle-right right"></i></a>
+    <ul class="dropdown-sub-menu4">
+      <li><a class="dropdown-item" href="#">Fruits & Vegetables</a></li>
+      <li><a class="dropdown-item" href="#">Meat & Fish</a></li>
+      <li><a class="dropdown-item" href="#">Cooking</a></li>
+      <li><a class="dropdown-item" href="#">Sauces & Pickles</a></li>
+      <li><a class="dropdown-item" href="#">Dairy & Eggs</a></li>
+      <li><a class="dropdown-item" href="#">Breakfast</a></li>
+      <li><a class="dropdown-item" href="#">Candy & Chocolate</a></li>
+      <li><a class="dropdown-item" href="#">Snacks</a></li>
+      <li><a class="dropdown-item" href="#">Beverages</a></li>
+      <li><a class="dropdown-item" href="#">Baking</a></li>
+      <li><a class="dropdown-item" href="#">Frozen & Canned</a></li>
+      <li><a class="dropdown-item" href="#">Diabetic Food</a></li>
+
+    </ul>
+  </li>
+  <li class="side-link"><a href="#"><i class="fa-solid fa-motorcycle"></i>Vehicle Essentials<i class="fa-solid fa-angle-right"></i></a></li>
+  
+
+ </ul>
+</div>
+ </aside>
+
+
+
+
+    <!-- LINKING ICONIFY ICON JS FILE LINK -->
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <!-- LINKING BOOTSTRAP JS FILE -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- LINKING MAIN JS FILE -->
+    <script src="js/app.js"></script>
+</body>
+</html>

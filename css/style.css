@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --text-color:#000814;
+    --primary-color:#001d3d;
+    --secondary-color:#003566;
+    --white-color:#fff;
+    --deep-yellow:#ffc300;
+    --light-yellow:#ffd60a;
+    --gray-color:#f2f2f2;
+    --shadow:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --font-family-primary:"Poppins", serif;
+    --font-family-secondary:"Mate SC", serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--font-family-primary);
+    transition: 0.25s;
+    background-color: var(--white-color);
+}
+ul,ol{
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6, p,span,ul,ol{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+/* COMMON CSS END*/
+
+/* NAVBAR SECTION HERE */
+.darkmode{
+    --white-color:#001d3d;
+    --text-color:#fff;  
+    --gray-color:#03254af9;
+    --light-yellow:#3e3b3b;
+}
+
+header{
+     background-color: var(--white-color);
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+     transition: 0.25s;
+}
+.navbar-brand{
+    font-family: var(--font-family-secondary);
+    font-size: 35px;
+    color: var(--text-color)!important;
+}
+.navbar-brand span{
+    color: var(--deep-yellow);
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.navbar-brand .d-block {
+    font-size: 15px;
+    transform: translateY(-11px) translateX(8px);
+    text-align: center;
+    color: var(--text-color);
+    letter-spacing: 15px;
+}
+.menu-sidebar:hover{
+    background-color: var(--gray-color);
+}
+.menu-sidebar {
+    font-size: 25px;
+    color: var(--text-color);
+    margin-left: 10px;
+    transition: all .3s;
+    padding: 5px 10px;
+}
+.navbar .container-fluid .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.navbar .container-fluid .row a {
+    display: inline-block;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    margin: 0px 10px;
+    color: var(--text-color);
+}
+.navbar .container-fluid .row .cart {
+    font-size: 26px;
+}
+.darkmode-icons {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+}
+.darkmode-icons span{
+    width: 100%;
+    height: 100%;
+    display: block;
+    line-height: 50px;
+    font-size: 25px;
+}
+.darkmode-icons span.sun {
+color: var(--text-color);
+}
+.darkmode .darkmode-icons span.moon{
+    margin-top: -50px !important;
+    transition: all .3s;
+}
+
+
+/* NAVBAR SECTION END */
+
+/* SIDEBAR CSS HERE */
+.sidebar {
+    /* /* width: 100%; */
+    height: 100%;
+    position: fixed;
+    top: 109px;
+    left: 0;
+}
+.side-link{
+    position: relative;
+}
+.sidebar-content{
+    width: 300px;
+    height: 100%;
+    background-color: var(--white-color);
+    color: var(--text-color);
+    padding: 20px;
+    transform: translateX(-100%);
+    transition: all 0.35s;
+    box-shadow: var(--shadow);
+}
+.sidebar-content.active{
+    transform: translateX(0%);
+}
+.darkmode .sidebar .sidebar-content{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.sub-menu{
+    position: relative;
+}
+.dropdown-sub-menu {
+    display: none;
+    border-left: 1px solid var(--light-yellow);
+    padding: 0 20px;
+    margin-left: 7px;
+}
+.hidden-submenu{
+    display: block;
+}
+.dropdown-sub-menu2 {
+    display: none;
+    border-left: 1px solid var(--light-yellow);
+    padding: 0 20px;
+    margin-left: 7px;
+}
+.hidden-submenu2{
+    display: block;
+}
+.dropdown-sub-menu3 {
+    display: none;
+    border-left: 1px solid var(--light-yellow);
+    padding: 0 20px;
+    margin-left: 7px;
+}
+.hidden-submenu3{
+    display: block;
+}
+.dropdown-sub-menu4 {
+    display: none;
+    border-left: 1px solid var(--light-yellow);
+    padding: 0 20px;
+    margin-left: 7px;
+}
+.hidden-submenu4{
+    display: block;
+}
+.dropdown-item{
+    font-size: 16px;
+}
+.side-bar-link .side-link a{
+font-size: 16px;
+color: var(--text-color);
+margin: 5px 0;
+display: inline-block;
+font-weight: 300;
+}
+.side-bar-link .side-link a i{
+    margin-right: 10px;
+    font-size: 16px;
+}
+.side-bar-link .side-link a iconify-icon{
+    margin-right: 10px;
+    font-size: 16px;
+}
+.side-bar-link .side-link a iconify-icon:nth-child(1){
+    color: skyblue;
+}
+.side-bar-link .side-link a .fa-briefcase{
+    color: rgb(136, 83, 63);
+}
+.side-bar-link .side-link a .fa-heart{
+    color: red;
+}
+.side-bar-link .side-link a iconify-icon.clean{
+    color: rgb(139, 56, 56);
+}
+.side-bar-link .side-link a iconify-icon.care{
+    color: rgb(165, 57, 134);
+}
+.side-bar-link .side-link a iconify-icon.health{
+    color:red;
+}
+.side-bar-link .side-link a iconify-icon.office{
+    color:red;
+}
+.side-bar-link .side-link a .fa-kitchen-set{
+    color: rgb(83, 93, 87);
+}
+.side-bar-link .side-link a .fa-shirt{
+    color: rgb(25, 119, 182);
+}
+.side-bar-link .side-link a .fa-motorcycle{
+    color: tomato;
+}
+.side-bar-link .side-link a .fa-person-breastfeeding{
+    color: rgb(31, 177, 85);
+}
+.side-bar-link .side-link a .fa-fire{
+    color: rgb(239, 83, 27);
+}
+.side-bar-link .side-link a i.fa-angle-right {
+    position: absolute;
+    right: 0;
+    top: 14px;
+    transform: translateY(-5px);
+    font-size: 12px;
+    color: var(--text-color);
+}
+.darkmode .container-fluid .side-bar-link .sub-menu .dropdown-sub-menu{
+    border-left: 1px solid var(--text-color);
+}
+/* SIDEBAR CSS END */
+
+
+/* BANNER SECTION HERE */
+
+/* BANNER SECTION END */
